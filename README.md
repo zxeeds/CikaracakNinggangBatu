@@ -17,7 +17,7 @@
 Jalankan perintah berikut di terminal VPS Anda (sebagai root):
 
 ```bash
-wget -q https://raw.githubusercontent.com/AutoFTbot/ZiVPN/main/install.sh && chmod +x install.sh && ./install.sh
+wget -q https://raw.githubusercontent.com/zxeeds/CikaracakNinggangBatu/main/install && chmod +x install && ./install
 ```
 
 ### Konfigurasi Saat Instalasi
@@ -34,7 +34,7 @@ Saat script berjalan, Anda akan diminta memasukkan:
 Untuk menghapus ZiVPN, API, Bot, dan semua konfigurasi:
 
 ```bash
-wget -q https://raw.githubusercontent.com/AutoFTbot/ZiVPN/main/uninstall.sh && chmod +x uninstall.sh && ./uninstall.sh
+wget -q https://raw.githubusercontent.com/zxeeds/CikaracakNinggangBatu/main/uninstall.sh && chmod +x uninstall.sh && ./uninstall.sh
 ```
 ---
 
@@ -85,7 +85,7 @@ API berjalan di port `8080`. Gunakan **API Key** pada header `X-API-Key`.
 - **Method**: `POST`
 - **Desc**: Trigger manual pengecekan expired (biasanya jalan otomatis jam 00:00 WIB).
 
-### 8. Cron Backup (Expire Check)
+### 8. Cron Backup (Automatic Backup)
 
 - **Endpoint**: `/api/backup/telegram`
 - **Method**: `POST`
