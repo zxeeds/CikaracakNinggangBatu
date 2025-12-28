@@ -24,7 +24,7 @@ const (
 	BackupConfFile = "/etc/zivpn/bot.conf"
 )
 
-var AuthToken = "AutoFtBot-agskjgdvsbdreiWG1234512SDKrqw"
+var AuthToken = "ZxeedS-agskjgdvsbdreiWG1234512SDKrqw"
 
 type Config struct {
     Listen string `json:"listen"`
