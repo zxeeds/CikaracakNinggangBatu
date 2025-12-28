@@ -17,7 +17,7 @@
 Jalankan perintah berikut di terminal VPS Anda (sebagai root):
 
 ```bash
-wget -q https://raw.githubusercontent.com/zxeeds/CikaracakNinggangBatu/main/install && chmod +x install && ./install
+wget -q https://raw.githubusercontent.com/zxeeds/CikaracakNinggangBatu/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 ### Konfigurasi Saat Instalasi
