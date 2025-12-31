@@ -275,11 +275,17 @@ func createTrialUser(w http.ResponseWriter, r *http.Request) {
         return
     }
 
+    domain := "Tidak diatur"
+    if domainBytes, err := ioutil.ReadFile(DomainFile); err == nil {
+        domain = strings.TrimSpace(string(domainBytes))
+    }
+
     jsonResponse(w, http.StatusOK, true, "Trial User berhasil dibuat", map[string]string{
         "password":   req.Password,
         "expired":    expDate,
         "created_at": createdAt,
         "type":       "trial",
+        "domain":     domain,
     })
 }
 
